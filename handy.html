@@ -1,0 +1,93 @@
+<style>
+  *{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html{
+  height: 100%;
+}
+
+.dude{
+  font-size: 6.5rem;
+  transform: translateY(18px) rotate(14deg);
+}
+
+body{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.handy{
+  transform-origin: 100%;
+  font-size: 6.5rem;
+  line-height: 1;
+  transform: rotate(-14deg);
+  animation: handy .33s infinite ease-out;
+  position: relative;
+  z-index: 2;
+}
+
+.eggplant{
+  font-size: 6.5rem;
+  transform: rotateY(180deg) rotate(-20deg) translate(72px, 12px);
+  position: relative;
+  z-index: 1;
+  line-height: 1;
+}
+
+.spurt{
+  line-height: 1;
+  font-size: 4rem;
+  transform: rotate(-14deg);
+  z-index: 2;
+  position: relative;
+  animation: spurt .66s infinite ease-in;
+}
+
+@keyframes handy{
+  0%{
+    transform: rotate(-14deg) translate(0, 0);
+  }
+
+   25%{
+    transform: rotate(-14deg) translate(-28px, 10px);
+  }
+
+ 50%{
+    transform: rotate(-14deg) translate(0, 0);
+  }
+
+ 75%{
+    transform: rotate(-14deg) translate(28px, -10px);
+  }
+
+ 50%{
+    transform: rotate(-14deg) translate(0, 0);
+  }
+}
+
+@keyframes spurt{
+  0%{
+    opacity: 0;
+    transform: rotate(-14deg) translate(-44px, -22px);
+  }
+
+ 75%{
+    opacity: .9;
+    transform: rotate(-14deg) translate(48px, 24px);
+  }
+
+ 100%{
+    opacity: 0;
+    transform: rotate(-14deg) translate(64px, 32px);
+  }
+}
+</style>
+<span class="handy">👊</span>
+<span class="eggplant">🍆</span>
+<span class="spurt">💦</span>
+<span class="dude">😭</span>
